@@ -2,11 +2,12 @@
   "apiVersion": "tanka.dev/v1alpha1",
   "kind": "Environment",
   "metadata": {
-    "name": "environments/default"
+    "name": "environments/default",
+    "namespace": "environments/default/main.jsonnet"
   },
   "spec": {
-    "apiServer": "",
-    "namespace": "default",
+    "apiServer": "https://api.ocp.betsolutions.net:6443",
+    "namespace": "ag-default",
     "resourceDefaults": {},
     "expectVersions": {}
   }
